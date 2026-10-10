@@ -987,3 +987,18 @@ src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer
 
 </div>
 
+
+
+## Working website — first version
+
+The interactive first version is in `app/dist/`: a responsive scrapbook homepage, topic filters, reading dialogs, and mood-based coffee-break notes.
+
+Run from the repository root:
+
+```bash
+python3 -m http.server 8000 --directory app/dist
+```
+
+Open http://localhost:8000. No npm installation or build step is required. Episode ideas are drafts; verified channel and video links can be added when available.
+
+See `app/README.md` for the implementation guide. The existing `app/page.tsx`, `app/read`, and `app/watch` files remain placeholders; the working entry point is `app/dist/index.html`.
